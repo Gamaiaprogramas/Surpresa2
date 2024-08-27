@@ -26,12 +26,54 @@
         <br> 
         <p>Tenho tanta coisa na minha mente, ultimamente nem sei muito como te dar 100% da minha atenção, mas como sempre falo, você é meu lugar de paz. Vou admitir que não vejo outra pessoa nesse mundo que consiga me cativar mais a não ser você, me lembra a frase de um livro que acho que você conhece:</p>
         <br>
-        <p style="color: rgb(168, 24, 24);">"Tu te tornas eternamente responsável por aquilo que cativas."</p>
+        <p style="color: rgb(168, 24, 24);">"A gente só conhece bem as coisas que cativa."</p>
         <br>
-        <p>E quando li o livro, me marcou demais e não sei nem descrever, porém</p>
+        <p>E quando li o livro, me marcou demais, percebi que mesmo tendo meses e meses que te conheci, sempre tem um pouco da senhorita que não conheço. Você é complexa, você diferente e você é unica, mal posso dizer o tanto que melhorei apenas por você e o quanto você evoluiu, me sinto feliz em ver a mulher que está se tornando.</p>
+        <br>
+        <p>Sempre irei me preocupar, mas você sempre mostra que consegue matar de letra qualquer situação e o quão responsavel está se tornando.</p>
+        <br> <br>
+
+        <div class="novo">
+            <p>Para acessar o resto, digite sua senha:</p>
+            <input id="Senha" type="text">
+
+            <button onclick="liberar()"> Enviar</button>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div id="amor">
+        <h1 style="color: rgb(148, 50, 50);">Eu te amo demais</h1>
+        <p>Só sei que te amo, nunca iria esperar que a primeira mensagem que mandei, iria me fazer descobrir a mulher da minha vida, te amo hoje amanhã e sempre, te amo minha princesa, meu amor, minha vida, minha pequena, minha wandinha, minha bebê e labios de vinho.</p>
+        <br>
+        <p>"Você é o capítulo perfeito que eu sempre quis adicionar na minha história"</p>
+        <br> 
+        <p>Hoje vejo que essa cantada nem foi tão ruim assim, ela se tornou realidade.</p>
+    </div>
     </div>
 
     <script>
+        const senha = "LabiosDeVinho";
+        const input = document.querySelector("#Senha");
+        const divAm = document.querySelector("#amor");
+        divAm.style.display = "none";
+
+        function liberar(){
+            if(input.value == senha){
+                divAm.style.display = "block";
+            }
+            else{
+                window.alert("Tente novamente!");
+            }
+        }
+
+
         function toggleMenu() {
             var menu = document.getElementById("menu");
             menu.style.display = menu.style.display === "block" ? "none" : "block";

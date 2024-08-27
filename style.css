@@ -79,6 +79,28 @@ nav ul li:first-child {
     border-top: none;
 }
 
+.novo{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30vw;
+    align-items: center;
+}
+.novo > input{
+    width: 40vw;
+    background-color: #7c4aac;
+    border: solid white;
+    border-radius: 1vh;
+    color: white;
+}
+.novo button{
+    background-color: white;
+    border: solid #7c4aac 1vw;
+    color: #7c4aac;
+    border-radius: 1vh;
+    font-size: 4vh;
+    cursor: pointer;
+}
 nav ul li a {
     color: #fff;
     text-decoration: none;
