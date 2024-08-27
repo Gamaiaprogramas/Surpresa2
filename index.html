@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/Hearth.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="dedicatoria.html">Dedicação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Feliz aniversário meu AMOR!!!</h1>
+        <div class="Inicio">
+            <h1>Senhorita labios de vinho, hoje é o seu dia e não teria como ser diferente, tudo isso que preparamos pra você só mostra o quão especial e querida você é por mim e por todos! <br>
+                <br>
+            Confesso que todo esse esforço que fizemos não foi nada comparado a o que fez por nós desde o inicio.<br> <br>
+            Suas risadas, conversas, carinho e até o jeito que você fica tímida em diversas situações te tornam ÚNICA, Maria Helena é tudo que sempre quisemos. <br> <br> Te amamos demais ❤
+            </h1>
+            <br>
+            <a href="fotos.html" target="_blank"><button>Avançar</button></a>
+        </div>
+        
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var bars = document.querySelectorAll('.hamburger div');
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                bars.forEach(bar => bar.classList.remove('change'));
+            } else {
+                menu.style.display = "block";
+                bars.forEach(bar => bar.classList.add('change'));
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Fotos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/Hearth.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="dedicatoria.html">Dedicação</a></li>
+            </ul>
+            
+        </nav>
+      
+    </header>
+    <!--     -->
+    <div class="container">
+        <h1>Nossas memórias nunca vão ser esquecidas</h1>
+        <br>
+        <p>Desde a primeira memoria já sabia que era você, você com seus olhos lindos ja me conquistaram na primeira troca de olhar. Tudo que vivemos é só o começo, te quero mais que tudo, te quero na minha vida meu amor.</p>
+        <br><br>
+        <div class="gallery">
+            <div>
+            <img src="/imagens/DoisLindos.jpeg" alt="Foto 1">
+            <h1>Sou vidrado nessa, não consigo nem dizer outra coisa</h1>
+            </div>
+            <div>
+            <img src="/imagens/DoisLindos2.jpeg" alt="Foto 2">
+            <h1>Nesse dia só te amei desde o inicio ao fim </h1>
+            </div>
+            <div>
+            <img src="/imagens/DoisLindos3.jpeg" alt="Foto 3">
+            <h1>Assim como nessa</h1>
+            </div>
+            <div>
+            </div>
+            <div>
+            <img src="/imagens/AndandoNaEscola.jpeg" alt="Foto 5" >
+            <h1>E tbm temos nossos primeiros paparazis kkkk</h1>
+            </div>
+            <div>
+                <h1>Fofos desde o inicio</h1>
+                <br>
+                <div class="fotos_pequenos">
+                    <img src="/imagens/HelenaCrianca.jpeg"  class="eu">
+                    <img src="/imagens/eu.jpeg" alt="" class="eu">
+                </div>
+                
+                
+            </div>
+            <div>
+            <img src="/imagens/DoisLindos4.jpeg" alt="Foto 4">
+            <h1>E seremos fofos até o fim ❤</h1>
+                </div>
+            <!-- Adicione mais fotos conforme necessário -->
+            <a href="/dedicatoria.html" target="_parent"><button class="butt_fotos">Avançar</button>
+            </a>
+        </div>
+
+        
+        <audio id="meuAudio" src="/audio/Velha Infância (2004 Digital Remaster).mp3" autoplay></audio>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var bars = document.querySelectorAll('.hamburger div');
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                bars.forEach(bar => bar.classList.remove('change'));
+            } else {
+                menu.style.display = "block";
+                bars.forEach(bar => bar.classList.add('change'));
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("meuAudio");
+    audio.volume = 0.2; 
+});
+    </script>
+</body>
+</html>

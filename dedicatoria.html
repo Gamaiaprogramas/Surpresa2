@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Dedicação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/Hearth.png">
+</head>
+<body>
+    <header>
+        <audio src="/audio/'Camille Turnaround' - The Little Prince.mp3" autoplay id="meuAudio"></audio>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+                <li><a href="Index.html">Início</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="dedicatoria.html">Dedicação</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Preciso falar!</h1>
+        <br> 
+        <p>Tenho tanta coisa na minha mente, ultimamente nem sei muito como te dar 100% da minha atenção, mas como sempre falo, você é meu lugar de paz. Vou admitir que não vejo outra pessoa nesse mundo que consiga me cativar mais a não ser você, me lembra a frase de um livro que acho que você conhece:</p>
+        <br>
+        <p style="color: rgb(168, 24, 24);">"Tu te tornas eternamente responsável por aquilo que cativas."</p>
+        <br>
+        <p>E quando li o livro, me marcou demais e não sei nem descrever, porém</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+            
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("meuAudio");
+    audio.volume = 0.2; });
+        
+    </script>
+</body>
+</html>

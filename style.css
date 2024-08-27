@@ -1,0 +1,179 @@
+/* Reset básico */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    background-image: url("./imagens/lenaroxa.jpg");
+    background-size: 60vh;
+    
+    color: #f7f7f7;
+
+}
+
+/* Container */
+.container {
+    padding: 5vh;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #7a2cbfbb;
+    color: #fff;
+    padding: 3vh 0;
+    display: flex;
+    
+}
+
+/* Menu Hamburger */
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 3vh;
+    width: 8vw; /* Definindo uma largura relativa para o container do hamburger */
+}
+
+.hamburger div {
+    width: 100%;
+    height: 0.8vh; /* Ajuste da altura das barras */
+    background-color: #fff;
+   
+    margin: 1.2vh 0; /* Espaçamento entre as barras */
+    transition: 0.4s; /* Transição suave */
+}
+
+/* Animação do Hamburger */
+.change.bar1 {
+    transform: rotate(-45deg) translate(-1vh, 1.5vh);
+
+}
+
+.change.bar2 {
+    opacity: 0;
+}
+
+.change.bar3 {
+    transform: rotate(45deg) translate(-1vh, -1.8vh);
+
+   
+}
+
+/* Menu */
+nav ul {
+    list-style-type: none;
+    display: none; /* Esconder menu no mobile */
+    text-align: center;
+    background-color: #7a2cbf00;
+}
+
+nav ul li {
+    padding: 2vh;
+}
+
+nav ul li:first-child {
+    border-top: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Galeria de Fotos */
+.gallery {
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.gallery div img {
+    height: 70vh;
+    width: 50vh;
+    border-radius: 3vh;
+
+}
+.gallery div div img{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 30vh;
+}
+.gallery div h1{
+    font-size: 3vh;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Inicio{
+    margin-top: 2vh;
+}
+
+.Inicio h1{
+    font-size: 3vh;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Inicio button{
+    background-color: #4a167a;
+    color: white;
+    font-size: 3vh;
+    font-weight: 600;
+    border: solid white 0.1vh;
+    border-radius: 1.4vh;
+    padding: 1vh 2vh;
+    box-shadow: #7c4aac 1vh 1vh 5vh;
+}
+
+.butt_fotos{
+    background-color: #4a167a;
+    color: white;
+    font-size: 3vh;
+    font-weight: 600;
+    border: solid white 0.1vh;
+    border-radius: 1.4vh;
+    padding: 1vh 2vh;
+    box-shadow: #7c4aac 1vh 1vh 5vh;
+}
+
+.fotos_pequenos{
+    display: flex;
+    width: 100%;
+    gap: 2vh;
+    border: white solid 0.2vh;
+    border-radius: 3vh;
+   
+
+}
+
+
+/* Estilo para o Desktop */
+@media (min-width: 768px) {
+    .gallery div div img{
+        height:40vh;
+        width: 40vh;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li {
+        padding: 3vh 5%;
+        border-top: none;
+    }
+    .hamburger {
+        display: none; /* Esconder o hamburger no desktop */
+    }
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
