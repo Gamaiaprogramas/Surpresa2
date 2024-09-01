@@ -20,6 +20,10 @@ body {
     padding: 5vh;
     text-align: center;
 }
+video{
+    height: 70vh;
+    border-radius: 3vh;
+}
 
 /* Cabeçalho */
 header {
